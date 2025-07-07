@@ -21,12 +21,17 @@ object Main extends App {
 
   val multiplyBy = multiplyAll(Seq(1,2,3))
   val result = multiplyBy(2)
-  print(result)
+  println(result)
 
   /*
   CHALLENGE 2
 
    */
 
-  
+  def oddOrEven(xs: Seq[Int]) : String = {
+    if xs.sum % 2 == 0 then "even" else "odd"
+  }
+  println(oddOrEven(Seq()))
+
+
 }
