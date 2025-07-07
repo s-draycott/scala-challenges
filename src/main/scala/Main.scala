@@ -53,7 +53,11 @@ CHALLENGE 3 - Find the odd Int
   println(findOdd(sequence))
 
 /*
-CHALLENGE 4 - 
+CHALLENGE 4 - Descending order
  */
 
+  def descendingOrder(num: Int): Int = {
+    num.toString.split("").sorted.reverse.mkString("").toInt
+  }
+  println(descendingOrder(46523))
 }
