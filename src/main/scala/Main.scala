@@ -77,6 +77,25 @@ Challenge 5 - Your order, please
 
   println(order("4of Fo1r pe6ople g3ood th5e the2"))
 
+  /*
+  Challenge 6 - String Repeat
+  Write a function that accepts a non-negative integer n and a string s as parameters,
+  and returns a string of s repeated exactly n times.
+  Here I could have just done str * times
+ */
+  def repeatStr(times: Int, str: String): String = List.fill(times)(str).mkString("")
+  def repeatStrAnswer(times: Int, str: String): String = str * times
+  println(repeatStrAnswer(9,"Sally"))
+
+  /*
+  Challenge 7 - Create a function that accepts a string and a single character, and returns an integer of the
+  count of occurrences the 2nd argument is found in the first one.
+  If no occurrences can be found, a count of 0 should be returned.
+   */
+  def strCount(s: String, c: Char): Int = s.toCharArray.count(char => char.equals(c))
+//def strCount(s: String, c: Char): Int = s.count(_ == c) this seems to be a shorthand way of doing this 
+  println(strCount("hello", 'l'))
+
 }
 
 
